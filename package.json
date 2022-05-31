@@ -1,0 +1,31 @@
+{
+  "name": "modarsin",
+  "version": "1.0.0",
+  "description": "Modarsin Portal",
+  "main": "src/app/index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build-all": "electron-builder -mw"
+  },
+  "build": {
+    "appId": "com.modarsin.app",
+    "productName": "Modarsin",
+    "mac": {
+      "icon": "src/assets/images/logo.icns",
+      "category": "public.app-category.education",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "src/assets/images/logo.png"
+    }
+  },
+  "author": "Arif Sajal",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.1",
+    "electron-builder": "^23.0.3"
+  },
+  "dependencies": {}
+}
