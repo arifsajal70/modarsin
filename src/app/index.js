@@ -3,6 +3,7 @@ const path = require('path')
 
 let win
 app.commandLine.appendSwitch('disable-features', 'IOSurfaceCapturer')
+app.disableHardwareAcceleration()
 const createWindow = () => {
 	win = new BrowserWindow({
 		width: 1280,
